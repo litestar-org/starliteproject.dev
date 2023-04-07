@@ -1,6 +1,0 @@
-Starlite
-========
-
-.. toctree::
-
-    about/index
