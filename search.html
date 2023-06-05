@@ -7,9 +7,7 @@
 
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Starlite Framework</title>
-    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><title>Search - Python  documentation</title>
   
   
   
@@ -36,14 +34,16 @@
   <link rel="preload" as="script" href="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d" />
 <link rel="preload" as="script" href="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d" />
 
-    <link href="_static/index.css" rel="stylesheet">
     <script data-url_root="./" id="documentation_options" src="_static/documentation_options.js"></script>
     <script src="_static/doctools.js"></script>
     <script src="_static/sphinx_highlight.js"></script>
-    <script>DOCUMENTATION_OPTIONS.pagename = 'index';</script>
+    <script>DOCUMENTATION_OPTIONS.pagename = 'search';</script>
+  <script src="_static/searchtools.js"></script>
+  <script src="_static/language_data.js"></script>
+  <script src="searchindex.js"></script>
     <link rel="icon" href="_static/favicon.png"/>
     <link rel="index" title="Index" href="genindex.html" />
-    <link rel="search" title="Search" href="search.html" />
+    <link rel="search" title="Search" href="#" />
   <meta name="viewport" content="width=device-width, initial-scale=1"/>
   <meta name="docsearch:language" content="en"/>
   </head>
@@ -71,7 +71,7 @@
     <div class="search-button__overlay"></div>
     <div class="search-button__search-container">
 <form class="bd-search d-flex align-items-center"
-      action="search.html"
+      action="#"
       method="get">
   <i class="fa-solid fa-magnifying-glass"></i>
   <input type="search"
@@ -99,7 +99,7 @@
       <div class="navbar-item">
   
 
-<a class="navbar-brand logo" href="#">
+<a class="navbar-brand logo" href="index.html">
   
   
   
@@ -434,65 +434,61 @@ document.write(`
       <main id="main-content" class="bd-main">
         
         
+          <div class="bd-content">
+            <div class="bd-article-container">
+              
+              <div class="bd-header-article"></div>
+              
+              
+  <div class="bd-search-container">
+    <h1>Search</h1>
+    <noscript>
+      <div class="admonition error">
+        <p class="admonition-title">Error</p>
+        <p>Please activate JavaScript to enable the search functionality.</p>
+      </div>
+    </noscript>
+    
+<form class="bd-search d-flex align-items-center"
+      action="#"
+      method="get">
+  <i class="fa-solid fa-magnifying-glass"></i>
+  <input type="search"
+         class="form-control"
+         name="q"
+         id="search-input"
+         placeholder="Search the docs ..."
+         aria-label="Search the docs ..."
+         autocomplete="off"
+         autocorrect="off"
+         autocapitalize="off"
+         spellcheck="false"/>
+  <span class="search-button__kbd-shortcut"><kbd class="kbd-shortcut__modifier">Ctrl</kbd>+<kbd>K</kbd></span>
+</form>
+    <div id="search-results"></div>
+  </div>
+  <script>
+    // Activate the search field on page load
+    let searchInput = document.querySelector("form.bd-search input");
+    if (searchInput) {
+        searchInput.focus();
+        searchInput.select();
+        console.log("[PST]: Set focus on search field.");
+    }
+  </script>
 
-    <div id="landing-header">
-        <img src="_static/logo-banner-inline-dark.svg" class="only-dark">
-        <img src="_static/logo-banner-inline-light.svg" class="only-light">
-        <span id="landing-tagline">Effortlessly build performant APIs</span>
-    </div>
-
-    <div id="landing-overview">
-        <section>
-            <h2>Fully featured</h2>
-            <p>
-                Everything that's needed to build modern APIs, from data serialization and validation
-                to websockets, ORM integration, session management, authentication and more
-            </p>
-        </section>
-
-        <section>
-            <h2>Fast</h2>
-            <p>
-                Starlite puts great emphasis on developer experience and performance: It's one of the fastest ASGI
-                frameworks and developing with it is just as fast
-            </p>
-        </section>
-
-        <section>
-            <h2>(a)synchronous</h2>
-            <p>
-                Fully compliant with the ASGI specification, Starlite is asynchronous at heart, but synchronous
-                execution is not a second class citizen: Synchronous applications run without performance penalties
-            </p>
-        </section>
-
-        <section>
-            <h2>Community driven</h2>
-            <p>
-                Developed by a community of volunteers, and led by a team of maintainers, Starlite is a community
-                project
-                at heart
-            </p>
-        </section>
-
-        <section>
-            <h2>Opinionated yet flexible</h2>
-            <p>
-                Developed to encourage best practices, but flexible enough to stay out of your way
-            </p>
-        </section>
-
-        <section>
-            <h2>Scalable</h2>
-            <p>
-                Bottom-up architecture makes it easy to develop modular and decoupled code, allowing applications to
-                scale easily, both in development and deployment
-            </p>
-        </section>
-
-    </div>
-
-
+              
+              
+            </div>
+            
+            
+              
+            
+          </div>
+          <footer class="bd-footer-content">
+            <div class="bd-footer-content__inner"></div>
+          </footer>
+        
       </main>
     </div>
   </div>
@@ -501,5 +497,7 @@ document.write(`
   <script src="_static/scripts/bootstrap.js?digest=12da95d707ffb74b382d"></script>
 <script src="_static/scripts/pydata-sphinx-theme.js?digest=12da95d707ffb74b382d"></script>
 
+  <footer class="bd-footer">
+  </footer>
   </body>
 </html>
